@@ -21,14 +21,14 @@ public class FPP5 {
         a=IntroduceNumero();
         calculaprimo(a);
     }
-    public static int IntroduceNumero(){
+    public static int IntroduceNumero(){ //Metod para introduccir un numeros
         int numero;
         Scanner teclado=new Scanner(System.in);
         System.out.println("Introduce Numero");
         numero=teclado.nextInt();
         return numero;
     }
-    public static void calculaprimo(int a){
+    public static void calculaprimo(int a){//Calcular si los numeros son primos o no entre ellos
         Scanner calcula =new Scanner(System.in);
         int numero=calcula.nextInt();
         int numero2=numero-1;
@@ -36,9 +36,9 @@ public class FPP5 {
         while((numero%numero2)!=0){
             numero2--;
         }if(numero2==1){
-            System.out.println("Es Primo");
+            System.out.println("Es Primo");//imprimir
             
-        }else{System.out.println("No es Primo");}
+        }else{System.out.println("No es Primo");}//imprimir
         
         }
     }
